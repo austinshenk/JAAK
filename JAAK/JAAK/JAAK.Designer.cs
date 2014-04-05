@@ -50,14 +50,13 @@
             this.propertiesPanel = new System.Windows.Forms.Panel();
             this.Bowlers = new System.Windows.Forms.TabPage();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.editBowlerBtn = new System.Windows.Forms.Button();
             this.removeBowlerBtn = new System.Windows.Forms.Button();
             this.addBowlerBtn = new System.Windows.Forms.Button();
             this.bowlerDataGrid = new System.Windows.Forms.DataGridView();
             this.databaseBtn = new System.Windows.Forms.Button();
-            this.editBowlerBtn = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
             this.Manager.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
             this.splitContainer1.Panel1.SuspendLayout();
             this.splitContainer1.Panel2.SuspendLayout();
             this.splitContainer1.SuspendLayout();
@@ -391,6 +390,19 @@
             this.panel5.Size = new System.Drawing.Size(780, 40);
             this.panel5.TabIndex = 1;
             // 
+            // editBowlerBtn
+            // 
+            this.editBowlerBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.editBowlerBtn.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.editBowlerBtn.Location = new System.Drawing.Point(132, 3);
+            this.editBowlerBtn.Name = "editBowlerBtn";
+            this.editBowlerBtn.Size = new System.Drawing.Size(122, 34);
+            this.editBowlerBtn.TabIndex = 2;
+            this.editBowlerBtn.Text = "Edit";
+            this.editBowlerBtn.UseVisualStyleBackColor = true;
+            this.editBowlerBtn.Click += new System.EventHandler(this.editBowlerBtn_Click);
+            // 
             // removeBowlerBtn
             // 
             this.removeBowlerBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
@@ -440,19 +452,6 @@
             this.databaseBtn.Text = "Database";
             this.databaseBtn.UseVisualStyleBackColor = true;
             // 
-            // editBowlerBtn
-            // 
-            this.editBowlerBtn.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left)));
-            this.editBowlerBtn.Font = new System.Drawing.Font("Georgia", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.editBowlerBtn.Location = new System.Drawing.Point(132, 3);
-            this.editBowlerBtn.Name = "editBowlerBtn";
-            this.editBowlerBtn.Size = new System.Drawing.Size(122, 34);
-            this.editBowlerBtn.TabIndex = 2;
-            this.editBowlerBtn.Text = "Edit";
-            this.editBowlerBtn.UseVisualStyleBackColor = true;
-            this.editBowlerBtn.Click += new System.EventHandler(this.editBowlerBtn_Click);
-            // 
             // JAAK
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -469,7 +468,6 @@
             this.Manager.ResumeLayout(false);
             this.splitContainer1.Panel1.ResumeLayout(false);
             this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
             this.splitContainer1.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.panel3.ResumeLayout(false);

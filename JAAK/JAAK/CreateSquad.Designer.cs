@@ -28,20 +28,24 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.time = new System.Windows.Forms.MaskedTextBox();
+            this.time = new System.Windows.Forms.DateTimePicker();
             this.label2 = new System.Windows.Forms.Label();
             this.nameLbl = new System.Windows.Forms.Label();
             this.directorLbl = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.date = new System.Windows.Forms.DateTimePicker();
             this.centerNameCmbo = new System.Windows.Forms.ComboBox();
             this.typeCmbo = new System.Windows.Forms.ComboBox();
+            this.date = new System.Windows.Forms.DateTimePicker();
             this.cancelBtn = new System.Windows.Forms.Button();
             this.okBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.ampmCmbo = new System.Windows.Forms.ComboBox();
+            this.jAAKdatabaseDataSet = new JAAK.JAAKdatabaseDataSet();
+            this.bowlingCenterBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.bowlingCenterTableAdapter = new JAAK.JAAKdatabaseDataSetTableAdapters.BowlingCenterTableAdapter();
             this.tableLayoutPanel2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jAAKdatabaseDataSet)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bowlingCenterBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel2
@@ -51,36 +55,35 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
-            this.tableLayoutPanel2.Controls.Add(this.label3, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.time, 1, 3);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 3);
             this.tableLayoutPanel2.Controls.Add(this.nameLbl, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.directorLbl, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.date, 1, 2);
             this.tableLayoutPanel2.Controls.Add(this.centerNameCmbo, 1, 0);
             this.tableLayoutPanel2.Controls.Add(this.typeCmbo, 1, 1);
-            this.tableLayoutPanel2.Controls.Add(this.ampmCmbo, 1, 4);
+            this.tableLayoutPanel2.Controls.Add(this.date, 1, 2);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowCount = 4;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 28F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(280, 138);
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(280, 118);
             this.tableLayoutPanel2.TabIndex = 10;
             // 
             // time
             // 
             this.time.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.time.CustomFormat = "hh:mm tt";
+            this.time.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.time.Location = new System.Drawing.Point(87, 87);
-            this.time.Mask = "90:00";
             this.time.Name = "time";
             this.time.Size = new System.Drawing.Size(190, 20);
-            this.time.TabIndex = 10;
+            this.time.TabIndex = 13;
             // 
             // label2
             // 
@@ -118,19 +121,13 @@
             this.label1.Text = "Date";
             this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // date
-            // 
-            this.date.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.date.Location = new System.Drawing.Point(87, 59);
-            this.date.Name = "date";
-            this.date.Size = new System.Drawing.Size(190, 20);
-            this.date.TabIndex = 8;
-            // 
             // centerNameCmbo
             // 
             this.centerNameCmbo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.centerNameCmbo.DataSource = this.bowlingCenterBindingSource;
+            this.centerNameCmbo.DisplayMember = "CenterName";
+            this.centerNameCmbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.centerNameCmbo.FormattingEnabled = true;
             this.centerNameCmbo.Location = new System.Drawing.Point(87, 3);
             this.centerNameCmbo.Name = "centerNameCmbo";
@@ -141,15 +138,27 @@
             // 
             this.typeCmbo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.typeCmbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.typeCmbo.FormattingEnabled = true;
             this.typeCmbo.Items.AddRange(new object[] {
             "Singles",
             "Doubles",
-            "Teams"});
+            "Teams",
+            "Singles and Doubles",
+            "All Events"});
             this.typeCmbo.Location = new System.Drawing.Point(87, 31);
             this.typeCmbo.Name = "typeCmbo";
             this.typeCmbo.Size = new System.Drawing.Size(190, 21);
             this.typeCmbo.TabIndex = 12;
+            // 
+            // date
+            // 
+            this.date.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.date.Location = new System.Drawing.Point(87, 59);
+            this.date.Name = "date";
+            this.date.Size = new System.Drawing.Size(190, 20);
+            this.date.TabIndex = 8;
             // 
             // cancelBtn
             // 
@@ -174,27 +183,19 @@
             this.okBtn.UseVisualStyleBackColor = true;
             this.okBtn.Click += new System.EventHandler(this.okBtn_Click);
             // 
-            // label3
+            // jAAKdatabaseDataSet
             // 
-            this.label3.Location = new System.Drawing.Point(3, 112);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(71, 28);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "AM/PM";
-            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.jAAKdatabaseDataSet.DataSetName = "JAAKdatabaseDataSet";
+            this.jAAKdatabaseDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
             // 
-            // ampmCmbo
+            // bowlingCenterBindingSource
             // 
-            this.ampmCmbo.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.ampmCmbo.FormattingEnabled = true;
-            this.ampmCmbo.Items.AddRange(new object[] {
-            "AM",
-            "PM"});
-            this.ampmCmbo.Location = new System.Drawing.Point(87, 115);
-            this.ampmCmbo.Name = "ampmCmbo";
-            this.ampmCmbo.Size = new System.Drawing.Size(190, 21);
-            this.ampmCmbo.TabIndex = 14;
+            this.bowlingCenterBindingSource.DataMember = "BowlingCenter";
+            this.bowlingCenterBindingSource.DataSource = this.jAAKdatabaseDataSet;
+            // 
+            // bowlingCenterTableAdapter
+            // 
+            this.bowlingCenterTableAdapter.ClearBeforeFill = true;
             // 
             // CreateSquad
             // 
@@ -212,8 +213,10 @@
             this.ShowInTaskbar = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "New Squad";
+            this.Load += new System.EventHandler(this.CreateSquad_Load);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.tableLayoutPanel2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.jAAKdatabaseDataSet)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.bowlingCenterBindingSource)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -221,7 +224,6 @@
         #endregion
 
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private System.Windows.Forms.MaskedTextBox time;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label nameLbl;
         private System.Windows.Forms.Label directorLbl;
@@ -231,7 +233,9 @@
         private System.Windows.Forms.ComboBox typeCmbo;
         private System.Windows.Forms.Button cancelBtn;
         private System.Windows.Forms.Button okBtn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.ComboBox ampmCmbo;
+        private System.Windows.Forms.DateTimePicker time;
+        private JAAKdatabaseDataSet jAAKdatabaseDataSet;
+        private System.Windows.Forms.BindingSource bowlingCenterBindingSource;
+        private JAAKdatabaseDataSetTableAdapters.BowlingCenterTableAdapter bowlingCenterTableAdapter;
     }
 }

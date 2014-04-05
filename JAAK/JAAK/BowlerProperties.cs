@@ -11,8 +11,11 @@ namespace JAAK
 {
     public partial class BowlerProperties : Form
     {
-        public BowlerProperties()
+        Database DB;
+
+        public BowlerProperties(Database db)
         {
+            DB = db;
             InitializeComponent();
         }
 

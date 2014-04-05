@@ -6,13 +6,14 @@ using System.Diagnostics;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JAAK
 {
     public partial class JAAK : Form
     {
+        Database DB = new Database();
+
         public JAAK()
         {
             InitializeComponent();
@@ -25,7 +26,7 @@ namespace JAAK
             if (list.SelectedIndex == -1) { return; }
 
             //Draw Tournament Properties
-            TournamentProperies tp = new TournamentProperies();
+            TournamentProperies tp = new TournamentProperies(DB);
             tp.Width = propertiesPanel.Width;
             tp.Height = propertiesPanel.Height;
             tp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom
@@ -39,7 +40,7 @@ namespace JAAK
             if (list.SelectedIndex == -1) { return; }
 
             //Draw Squad Properties
-            SquadProperties sp = new SquadProperties();
+            SquadProperties sp = new SquadProperties(DB);
             sp.Width = propertiesPanel.Width;
             sp.Height = propertiesPanel.Height;
             sp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom
@@ -53,7 +54,7 @@ namespace JAAK
             if (list.SelectedIndex == -1) { return; }
 
             //Draw Team Properties
-            TeamProperties tp = new TeamProperties();
+            TeamProperties tp = new TeamProperties(DB);
             tp.Width = propertiesPanel.Width;
             tp.Height = propertiesPanel.Height;
             tp.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom
@@ -63,7 +64,7 @@ namespace JAAK
 
         private void addTournamentBtn_Click(object sender, EventArgs e)
         {
-            CreateTournament form = new CreateTournament();
+            CreateTournament form = new CreateTournament(DB);
             form.ShowDialog();
         }
         private void removeTournamentBtn_Click(object sender, EventArgs e)
@@ -89,7 +90,7 @@ namespace JAAK
             }
             else
             {
-                CreateSquad form = new CreateSquad();
+                CreateSquad form = new CreateSquad(DB);
                 form.ShowDialog();
             }
         }
@@ -118,7 +119,7 @@ namespace JAAK
             }
             else
             {
-                CreateTeam form = new CreateTeam();
+                CreateTeam form = new CreateTeam(DB);
                 form.ShowDialog();
             }
         }
@@ -137,7 +138,7 @@ namespace JAAK
 
         private void addBowlerBtn_Click(object sender, EventArgs e)
         {
-            CreateBowler form = new CreateBowler();
+            CreateBowler form = new CreateBowler(DB);
             form.ShowDialog();
         }
 
@@ -152,7 +153,7 @@ namespace JAAK
 
         private void editBowlerBtn_Click(object sender, EventArgs e)
         {
-            BowlerProperties form = new BowlerProperties();
+            BowlerProperties form = new BowlerProperties(DB);
             form.ShowDialog();
         }
     }

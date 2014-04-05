@@ -5,15 +5,17 @@ using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JAAK
 {
     public partial class TournamentProperies : UserControl
     {
-        public TournamentProperies()
+        Database DB;
+
+        public TournamentProperies(Database db)
         {
+            DB = db;
             InitializeComponent();
         }
 

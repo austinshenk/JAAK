@@ -11,8 +11,11 @@ namespace JAAK
 {
     public partial class CreateBowler : Form
     {
-        public CreateBowler()
+        Database DB;
+
+        public CreateBowler(Database db)
         {
+            DB = db;
             InitializeComponent();
         }
 
