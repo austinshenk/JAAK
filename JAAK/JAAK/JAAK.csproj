@@ -39,6 +39,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -79,11 +80,17 @@
     <Compile Include="CreateTournament.Designer.cs">
       <DependentUpon>CreateTournament.cs</DependentUpon>
     </Compile>
+    <Compile Include="Database.cs" />
     <Compile Include="JAAK.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="JAAK.Designer.cs">
       <DependentUpon>JAAK.cs</DependentUpon>
+    </Compile>
+    <Compile Include="JAAKdatabaseDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -142,6 +149,17 @@
     <EmbeddedResource Include="TournamentProperies.resx">
       <DependentUpon>TournamentProperies.cs</DependentUpon>
     </EmbeddedResource>
+    <None Include="JAAKdatabaseDataSet.xsc">
+      <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="JAAKdatabaseDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>JAAKdatabaseDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="JAAKdatabaseDataSet.xss">
+      <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
+    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

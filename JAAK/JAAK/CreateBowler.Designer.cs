@@ -162,6 +162,7 @@
             // genderCmbo
             // 
             this.genderCmbo.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.genderCmbo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.genderCmbo.FormattingEnabled = true;
             this.genderCmbo.Items.AddRange(new object[] {
             "Male",
@@ -177,7 +178,7 @@
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(92, 28);
             this.label2.TabIndex = 9;
-            this.label2.Text = "Last Known Avg";
+            this.label2.Text = "Average";
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label1

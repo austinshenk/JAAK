@@ -125,6 +125,7 @@
             // 
             this.startDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.startDate.CustomFormat = "";
             this.startDate.Location = new System.Drawing.Point(87, 59);
             this.startDate.Name = "startDate";
             this.startDate.Size = new System.Drawing.Size(190, 20);
@@ -134,6 +135,7 @@
             // 
             this.endDate.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.endDate.CustomFormat = "";
             this.endDate.Location = new System.Drawing.Point(87, 87);
             this.endDate.Name = "endDate";
             this.endDate.Size = new System.Drawing.Size(190, 20);

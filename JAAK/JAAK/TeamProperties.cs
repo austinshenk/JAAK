@@ -5,15 +5,16 @@ using System.Drawing;
 using System.Data;
 using System.Linq;
 using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace JAAK
 {
     public partial class TeamProperties : UserControl
     {
-        public TeamProperties()
+        Database DB;
+        public TeamProperties(Database db)
         {
+            DB = db;
             InitializeComponent();
         }
 
