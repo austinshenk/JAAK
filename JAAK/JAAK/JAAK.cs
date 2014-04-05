@@ -4,7 +4,6 @@ using System.ComponentModel;
 using System.Data;
 using System.Diagnostics;
 using System.Drawing;
-using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
@@ -69,30 +68,11 @@ namespace JAAK
         }
         private void removeTournamentBtn_Click(object sender, EventArgs e)
         {
-            if (tournamentList.SelectedIndex == -1)
-            {
-                MessageBox.Show("Please select a tournament from the list below.", "No Tournament Selected", MessageBoxButtons.OK, MessageBoxIcon.Asterisk);
-            }
-            else
-            {
-                //Delete selected tournament
-            }
         }
         private void addSquadBtn_Click(object sender, EventArgs e)
         {
-            if (tournamentList.SelectedIndex == -1)
-            {
-                DialogResult result = MessageBox.Show("Would you like to create a new tournament?", "No Tournament selected", MessageBoxButtons.YesNo, MessageBoxIcon.Asterisk);
-                if (result == DialogResult.Yes)
-                {
-                    addTournamentBtn_Click(sender, e);
-                }
-            }
-            else
-            {
-                CreateSquad form = new CreateSquad(DB);
-                form.ShowDialog();
-            }
+            CreateSquad form = new CreateSquad(DB);
+            form.ShowDialog();
         }
 
         private void removeSquadBtn_Click(object sender, EventArgs e)
