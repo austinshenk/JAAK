@@ -26,7 +26,7 @@ namespace JAAK
 
         private void okBtn_Click(object sender, EventArgs e)
         {
-            int TID = 0;
+            int TID;
             //Checks to ensure the user entered data
             if (nameTxt.Text == "" || directorTxt.Text == "")
             {
@@ -51,8 +51,19 @@ namespace JAAK
                     return;
                 }
             }
-            DB.addTournament(TID.ToString(), nameTxt.Text, directorTxt.Text, startDate.Value.ToShortDateString(), endDate.Value.ToShortDateString());
+            TID = DB.GetNewID("Tournament", "TournamentID");
+            DB.addTournament(TID.ToString(), nameTxt.Text, startDate.Value.ToShortDateString(), endDate.Value.ToShortDateString(), directorTxt.Text, phoneTxt.Text, addressTxt.Text, cityTxt.Text, stateTxt.Text, zipTxt.Text, null, null, null, null);
+            int E1ID = DB.GetNewID("Event", "EventID");
+            DB.addEvent(E1ID.ToString(), TID.ToString(), "Singles", "Singles", null, null, null, null, null, null);
+            int E2ID = DB.GetNewID("Event", "EventID");
+            DB.addEvent(E2ID.ToString(), TID.ToString(), "Doubles", "Doubles", null, null, null, null, null, null);
+            int E3ID = DB.GetNewID("Event", "EventID");
+            DB.addEvent(E3ID.ToString(), TID.ToString(), "Teams", "Teams", null, null, null, null, null, null);
+            DB.addDivision(DB.GetNewID("Division", "DivisionID").ToString(), TID.ToString(), E1ID.ToString(), "Singles", null, null, null, null, null, null, null, null, null, null);
+            DB.addDivision(DB.GetNewID("Division", "DivisionID").ToString(), TID.ToString(), E2ID.ToString(), "Doubles", null, null, null, null, null, null, null, null, null, null);
+            DB.addDivision(DB.GetNewID("Division", "DivisionID").ToString(), TID.ToString(), E3ID.ToString(), "Teams", null, null, null, null, null, null, null, null, null, null);
             this.Close();
+
         }
 
 

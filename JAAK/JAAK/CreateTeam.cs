@@ -21,7 +21,7 @@ namespace JAAK
         }
 
         private void okBtn_Click(object sender, EventArgs e)
-        {
+        {/*
             //Checks to ensure the user entered data in all fields
             if (tmB1FName.Text == "" || tmB2FName.Text == "" || tmB3FName.Text == "" || tmB4FName.Text == "" ||
                 tmB1LName.Text == "" || tmB2LName.Text == "" || tmB3LName.Text == "" || tmB4LName.Text == "" ||
@@ -62,8 +62,39 @@ namespace JAAK
                 MessageBox.Show("No special characters");
                 return;
             }
+            //Get New bowler ID's
+            //Check to see if bowlers already exsist
+            //Add first names to all bowlers
+            //determine what division everyone belongs to
 
+            //Adding team members to database
+            DB.addBowler("0", tmB1TNBA.Text, tmB1USBC.Text, tmB1LName.Text, tmB1Average.Text, tmB1Average.Text, senateTxt.Text, "", tmB1Sex.Text);
+            DB.addBowler("1", tmB2TNBA.Text, tmB2USBC.Text, tmB2LName.Text, tmB2Average.Text, tmB2Average.Text, senateTxt.Text, "", tmB2Sex.Text);
+            DB.addBowler("2", tmB3TNBA.Text, tmB3USBC.Text, tmB3LName.Text, tmB3Average.Text, tmB3Average.Text, senateTxt.Text, "", tmB3Sex.Text);
+            DB.addBowler("3", tmB4TNBA.Text, tmB4USBC.Text, tmB4LName.Text, tmB4Average.Text, tmB4Average.Text, senateTxt.Text, "", tmB4Sex.Text);
+            //Adding team to database
+            DB.addTeam("", "Team", "0", "1", "2", "3", senateTxt.Text, cityTxt.Text); //add state
 
+            if (same1.SelectedIndex == -1 || same1.SelectedIndex == 0)
+            {
+                DB.addBowler("4", dblB1TNBA.Text, dblB1USBC.Text, dblB1LName.Text, dblB1Average.Text, dblB1Average.Text, senateTxt.Text, "", dblB1Sex.Text);
+            }
+            if (same2.SelectedIndex == -1 || same2.SelectedIndex == 0)
+            {
+                DB.addBowler("5", dblB2TNBA.Text, dblB2USBC.Text, dblB2LName.Text, dblB2Average.Text, dblB2Average.Text, senateTxt.Text, "", dblB2Sex.Text);
+            }
+            if (same3.SelectedIndex == -1 || same3.SelectedIndex == 0)
+            {
+                DB.addBowler("6", dblB3TNBA.Text, dblB3USBC.Text, dblB3LName.Text, dblB3Average.Text, dblB3Average.Text, senateTxt.Text, "", dblB3Sex.Text);
+            }
+            if (same1.SelectedIndex == -1 || same1.SelectedIndex == 0)
+            {
+                DB.addBowler("7", dblB4TNBA.Text, dblB4USBC.Text, dblB4LName.Text, dblB4Average.Text, dblB4Average.Text, senateTxt.Text, "", dblB4Sex.Text);
+            }
+
+            DB.addTeam("","Double","4","5",null,null,senateTxt.Text,cityTxt.Text); //add state
+            DB.addTeam("", "Double", "6", "7", null, null, senateTxt.Text, cityTxt.Text); //add state
+            */
             this.Close();
         }
 

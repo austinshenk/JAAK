@@ -21,12 +21,12 @@ namespace JAAK
 
         private void okBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
 
         private void cancelBtn_Click(object sender, EventArgs e)
         {
-            this.Hide();
+            this.Close();
         }
     }
 }

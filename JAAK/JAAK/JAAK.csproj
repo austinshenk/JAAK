@@ -39,10 +39,16 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86" />
+    <Reference Include="System.Data.SQLite, Version=1.0.66.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=x86">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Data.SQLite.Linq, Version=2.0.38.0, Culture=neutral, PublicKeyToken=db937bc2d44ff139, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\..\..\..\..\..\..\Program Files (x86)\SQLite.NET\bin\System.Data.SQLite.Linq.dll</HintPath>
+    </Reference>
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
@@ -61,6 +67,18 @@
     </Compile>
     <Compile Include="CreateBowler.Designer.cs">
       <DependentUpon>CreateBowler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateBowlingCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateBowlingCenter.Designer.cs">
+      <DependentUpon>CreateBowlingCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CreateEvent.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateEvent.Designer.cs">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
     </Compile>
     <Compile Include="CreateSquad.cs">
       <SubType>Form</SubType>
@@ -81,16 +99,41 @@
       <DependentUpon>CreateTournament.cs</DependentUpon>
     </Compile>
     <Compile Include="Database.cs" />
+    <Compile Include="DeleteBowler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteBowler.Designer.cs">
+      <DependentUpon>DeleteBowler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DeleteCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DeleteCenter.Designer.cs">
+      <DependentUpon>DeleteCenter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditBowler.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditBowler.Designer.cs">
+      <DependentUpon>EditBowler.cs</DependentUpon>
+    </Compile>
+    <Compile Include="EditCenter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EditCenter.Designer.cs">
+      <DependentUpon>EditCenter.cs</DependentUpon>
+    </Compile>
     <Compile Include="JAAK.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="JAAK.Designer.cs">
       <DependentUpon>JAAK.cs</DependentUpon>
     </Compile>
-    <Compile Include="JAAKdatabaseDataSet.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DesignTime>True</DesignTime>
-      <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
+    <Compile Include="OpenTournament.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OpenTournament.Designer.cs">
+      <DependentUpon>OpenTournament.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -118,6 +161,12 @@
     <EmbeddedResource Include="CreateBowler.resx">
       <DependentUpon>CreateBowler.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CreateBowlingCenter.resx">
+      <DependentUpon>CreateBowlingCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateEvent.resx">
+      <DependentUpon>CreateEvent.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="CreateSquad.resx">
       <DependentUpon>CreateSquad.cs</DependentUpon>
     </EmbeddedResource>
@@ -127,8 +176,23 @@
     <EmbeddedResource Include="CreateTournament.resx">
       <DependentUpon>CreateTournament.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="DeleteBowler.resx">
+      <DependentUpon>DeleteBowler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DeleteCenter.resx">
+      <DependentUpon>DeleteCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditBowler.resx">
+      <DependentUpon>EditBowler.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="EditCenter.resx">
+      <DependentUpon>EditCenter.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="JAAK.resx">
       <DependentUpon>JAAK.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OpenTournament.resx">
+      <DependentUpon>OpenTournament.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -149,12 +213,14 @@
     <EmbeddedResource Include="TournamentProperies.resx">
       <DependentUpon>TournamentProperies.cs</DependentUpon>
     </EmbeddedResource>
+    <Content Include="JAAKdatabase.s3db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
     <None Include="JAAKdatabaseDataSet.xsc">
       <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
     </None>
     <None Include="JAAKdatabaseDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
-      <LastGenOutput>JAAKdatabaseDataSet.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
     </None>
     <None Include="JAAKdatabaseDataSet.xss">

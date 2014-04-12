@@ -12,25 +12,29 @@ namespace JAAK
     public partial class CreateSquad : Form
     {
         Database DB;
-        public CreateSquad(Database db)
+        string Tid;
+        int squadID;
+
+        public CreateSquad(Database db, string id)
         {
             DB = db;
+            Tid = id;
             InitializeComponent();
         }
         
         private void CreateSquad_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'jAAKdatabaseDataSet.BowlingCenter' table. You can move, or remove it, as needed.
-            this.bowlingCenterTableAdapter.Fill(this.jAAKdatabaseDataSet.BowlingCenter);
-            //TODO fill combo box with existing Bowling Center Names
+            DB.Loadcmb(centerNameCmbo, "Select CenterName from BowlingCenter", "CenterName", "CenterName");
+            DB.Loadcmb(typeCmbo, "Select * from Event where TournamentID = " + Tid, "EventID", "EventName");
+            squadID = DB.GetNewID("Squad", "SquadID");
+            txtName.Text = "Squad0" + (squadID+1).ToString();
         }
 
         private void okBtn_Click(object sender, EventArgs e)
         {
-            int squadID = 0;
-            int tourneyID = 0; //TODO set to currently selected tournament
+            
             if (centerNameCmbo.Text == "" || typeCmbo.Text == "") { MessageBox.Show("All fields are required"); return; }
-            DB.addSquad(squadID.ToString(), tourneyID.ToString(), centerNameCmbo.Text, typeCmbo.Text, date.Value.ToShortDateString(), time.Value.ToShortTimeString());
+            DB.addSquad(squadID.ToString(), Tid,typeCmbo.SelectedValue.ToString(), txtName.Text ,centerNameCmbo.SelectedValue.ToString(), date.Value.ToShortDateString(), time.Value.ToShortTimeString());
             this.Close();
         }
 
