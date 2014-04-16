@@ -74,6 +74,12 @@
     <Compile Include="CreateBowlingCenter.Designer.cs">
       <DependentUpon>CreateBowlingCenter.cs</DependentUpon>
     </Compile>
+    <Compile Include="CreateDivision.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CreateDivision.Designer.cs">
+      <DependentUpon>CreateDivision.cs</DependentUpon>
+    </Compile>
     <Compile Include="CreateEvent.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Registration.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Registration.Designer.cs">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </Compile>
     <Compile Include="SquadProperties.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -163,6 +175,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="CreateBowlingCenter.resx">
       <DependentUpon>CreateBowlingCenter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CreateDivision.resx">
+      <DependentUpon>CreateDivision.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="CreateEvent.resx">
       <DependentUpon>CreateEvent.cs</DependentUpon>
@@ -204,6 +219,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Registration.resx">
+      <DependentUpon>Registration.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SquadProperties.resx">
       <DependentUpon>SquadProperties.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,19 +231,6 @@
     <EmbeddedResource Include="TournamentProperies.resx">
       <DependentUpon>TournamentProperies.cs</DependentUpon>
     </EmbeddedResource>
-    <Content Include="JAAKdatabase.s3db">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
-    </Content>
-    <None Include="JAAKdatabaseDataSet.xsc">
-      <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
-    </None>
-    <None Include="JAAKdatabaseDataSet.xsd">
-      <Generator>MSDataSetGenerator</Generator>
-      <SubType>Designer</SubType>
-    </None>
-    <None Include="JAAKdatabaseDataSet.xss">
-      <DependentUpon>JAAKdatabaseDataSet.xsd</DependentUpon>
-    </None>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

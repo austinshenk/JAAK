@@ -31,6 +31,7 @@
             this.cancelBtn = new System.Windows.Forms.Button();
             this.okBtn = new System.Windows.Forms.Button();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
+            this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.Addresstxt = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
@@ -49,10 +50,11 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.citytxt = new System.Windows.Forms.TextBox();
-            this.statetxt = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
             this.Senatetxt = new System.Windows.Forms.TextBox();
             this.MItxt = new System.Windows.Forms.MaskedTextBox();
+            this.Ziptxt = new System.Windows.Forms.MaskedTextBox();
+            this.statetxt = new System.Windows.Forms.MaskedTextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -60,7 +62,7 @@
             // 
             this.cancelBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.cancelBtn.DialogResult = System.Windows.Forms.DialogResult.Cancel;
-            this.cancelBtn.Location = new System.Drawing.Point(225, 307);
+            this.cancelBtn.Location = new System.Drawing.Point(225, 335);
             this.cancelBtn.Name = "cancelBtn";
             this.cancelBtn.Size = new System.Drawing.Size(75, 23);
             this.cancelBtn.TabIndex = 13;
@@ -71,7 +73,7 @@
             // okBtn
             // 
             this.okBtn.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.okBtn.Location = new System.Drawing.Point(144, 307);
+            this.okBtn.Location = new System.Drawing.Point(144, 335);
             this.okBtn.Name = "okBtn";
             this.okBtn.Size = new System.Drawing.Size(75, 23);
             this.okBtn.TabIndex = 12;
@@ -86,6 +88,7 @@
             this.tableLayoutPanel2.ColumnCount = 2;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel2.Controls.Add(this.label11, 0, 11);
             this.tableLayoutPanel2.Controls.Add(this.label10, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.Addresstxt, 1, 8);
             this.tableLayoutPanel2.Controls.Add(this.label9, 0, 8);
@@ -104,13 +107,14 @@
             this.tableLayoutPanel2.Controls.Add(this.label1, 0, 4);
             this.tableLayoutPanel2.Controls.Add(this.label2, 0, 5);
             this.tableLayoutPanel2.Controls.Add(this.citytxt, 1, 9);
-            this.tableLayoutPanel2.Controls.Add(this.statetxt, 1, 10);
             this.tableLayoutPanel2.Controls.Add(this.label5, 0, 7);
             this.tableLayoutPanel2.Controls.Add(this.Senatetxt, 1, 7);
             this.tableLayoutPanel2.Controls.Add(this.MItxt, 1, 1);
+            this.tableLayoutPanel2.Controls.Add(this.Ziptxt, 1, 11);
+            this.tableLayoutPanel2.Controls.Add(this.statetxt, 1, 10);
             this.tableLayoutPanel2.Location = new System.Drawing.Point(12, 12);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 11;
+            this.tableLayoutPanel2.RowCount = 12;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
@@ -122,8 +126,18 @@
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle());
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(288, 289);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(288, 317);
             this.tableLayoutPanel2.TabIndex = 14;
+            // 
+            // label11
+            // 
+            this.label11.Location = new System.Drawing.Point(3, 287);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(71, 23);
+            this.label11.TabIndex = 33;
+            this.label11.Text = "Zip";
+            this.label11.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label10
             // 
@@ -147,9 +161,9 @@
             // 
             this.label9.Location = new System.Drawing.Point(3, 209);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(71, 23);
+            this.label9.Size = new System.Drawing.Size(80, 23);
             this.label9.TabIndex = 30;
-            this.label9.Text = "Full Address";
+            this.label9.Text = "Street Address";
             this.label9.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // label8
@@ -291,15 +305,6 @@
             this.citytxt.Size = new System.Drawing.Size(196, 20);
             this.citytxt.TabIndex = 11;
             // 
-            // statetxt
-            // 
-            this.statetxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.statetxt.Location = new System.Drawing.Point(89, 264);
-            this.statetxt.Name = "statetxt";
-            this.statetxt.Size = new System.Drawing.Size(196, 20);
-            this.statetxt.TabIndex = 12;
-            // 
             // label5
             // 
             this.label5.Location = new System.Drawing.Point(3, 183);
@@ -322,10 +327,27 @@
             // 
             this.MItxt.Dock = System.Windows.Forms.DockStyle.Fill;
             this.MItxt.Location = new System.Drawing.Point(89, 29);
-            this.MItxt.Mask = "L.";
+            this.MItxt.Mask = "L";
             this.MItxt.Name = "MItxt";
             this.MItxt.Size = new System.Drawing.Size(196, 20);
             this.MItxt.TabIndex = 1;
+            // 
+            // Ziptxt
+            // 
+            this.Ziptxt.Location = new System.Drawing.Point(89, 290);
+            this.Ziptxt.Mask = "00000";
+            this.Ziptxt.Name = "Ziptxt";
+            this.Ziptxt.Size = new System.Drawing.Size(196, 20);
+            this.Ziptxt.TabIndex = 34;
+            this.Ziptxt.ValidatingType = typeof(int);
+            // 
+            // statetxt
+            // 
+            this.statetxt.Location = new System.Drawing.Point(89, 264);
+            this.statetxt.Mask = "LL";
+            this.statetxt.Name = "statetxt";
+            this.statetxt.Size = new System.Drawing.Size(196, 20);
+            this.statetxt.TabIndex = 35;
             // 
             // CreateBowler
             // 
@@ -333,7 +355,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.CancelButton = this.cancelBtn;
-            this.ClientSize = new System.Drawing.Size(312, 339);
+            this.ClientSize = new System.Drawing.Size(312, 368);
             this.Controls.Add(this.tableLayoutPanel2);
             this.Controls.Add(this.cancelBtn);
             this.Controls.Add(this.okBtn);
@@ -370,9 +392,11 @@
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox citytxt;
-        private System.Windows.Forms.TextBox statetxt;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox Senatetxt;
         private System.Windows.Forms.MaskedTextBox MItxt;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.MaskedTextBox Ziptxt;
+        private System.Windows.Forms.MaskedTextBox statetxt;
     }
 }

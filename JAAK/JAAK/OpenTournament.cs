@@ -34,7 +34,7 @@ namespace JAAK
             }
             else
             {
-                mainmenu.changeTournament(cmbTourney.SelectedValue.ToString(), cmbTourney.Text.ToString());
+                mainmenu.loadTournament(cmbTourney.SelectedValue.ToString(), cmbTourney.Text.ToString());
                 this.Close();
             }
         }
@@ -44,6 +44,11 @@ namespace JAAK
             this.Close();
             CreateTournament form = new CreateTournament(DB);
             form.ShowDialog();
+        }
+
+        private void btnImport_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

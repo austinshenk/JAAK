@@ -21,12 +21,12 @@ namespace JAAK
 
         private void btnAdd_Click(object sender, EventArgs e)
         {
-            if (txtName.Text == "" || txtManager.Text == "" || txtAddress.Text == "" || txtCity.Text == "" || txtState.Text == "" || txtZip.Text == "" || txtPhone.Text == "")
+            if (txtName.Text == "" || txtManager.Text == "" || txtAddress.Text == "" || txtCity.Text == "" || txtState.Text == "" || txtZip.Text == "" || txtPhone.Text == "" || txtLanes.Text == "")
             {
                 MessageBox.Show("All fields are required");
                 return;
             }
-            DB.addBowlingCenter(txtName.Text, txtManager.Text, txtAddress.Text, txtCity.Text, txtState.Text, txtZip.Text, txtPhone.Text);
+            DB.addBowlingCenter(txtName.Text, txtManager.Text, txtAddress.Text, txtCity.Text, txtState.Text, txtZip.Text, txtPhone.Text, txtLanes.Text);
             this.Close();
         }
     }

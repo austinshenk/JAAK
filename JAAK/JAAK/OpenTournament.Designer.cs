@@ -81,6 +81,7 @@
             this.btnImport.Text = "Import Tournament Files";
             this.btnImport.UseVisualStyleBackColor = true;
             this.btnImport.Visible = false;
+            this.btnImport.Click += new System.EventHandler(this.btnImport_Click);
             // 
             // OpenTournament
             // 

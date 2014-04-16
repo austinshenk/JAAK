@@ -158,7 +158,7 @@
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 78F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 86F));
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 93F));
-            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 91F));
+            this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 92F));
             this.tableLayoutPanel2.Controls.Add(this.label28, 3, 8);
             this.tableLayoutPanel2.Controls.Add(this.label27, 2, 8);
             this.tableLayoutPanel2.Controls.Add(this.tmB4LName, 3, 6);
@@ -288,7 +288,7 @@
             // 
             // label28
             // 
-            this.label28.Location = new System.Drawing.Point(208, 216);
+            this.label28.Location = new System.Drawing.Point(207, 216);
             this.label28.Name = "label28";
             this.label28.Size = new System.Drawing.Size(110, 20);
             this.label28.TabIndex = 59;
@@ -308,7 +308,7 @@
             // 
             this.tmB4LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB4LName.Location = new System.Drawing.Point(208, 171);
+            this.tmB4LName.Location = new System.Drawing.Point(207, 171);
             this.tmB4LName.Name = "tmB4LName";
             this.tmB4LName.Size = new System.Drawing.Size(110, 20);
             this.tmB4LName.TabIndex = 27;
@@ -317,7 +317,7 @@
             // 
             this.tmB3LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB3LName.Location = new System.Drawing.Point(208, 143);
+            this.tmB3LName.Location = new System.Drawing.Point(207, 143);
             this.tmB3LName.Name = "tmB3LName";
             this.tmB3LName.Size = new System.Drawing.Size(110, 20);
             this.tmB3LName.TabIndex = 20;
@@ -328,14 +328,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.TeamNameTxt.Location = new System.Drawing.Point(93, 3);
             this.TeamNameTxt.Name = "TeamNameTxt";
-            this.TeamNameTxt.Size = new System.Drawing.Size(109, 20);
+            this.TeamNameTxt.Size = new System.Drawing.Size(108, 20);
             this.TeamNameTxt.TabIndex = 1;
             // 
             // label8
             // 
             this.label8.Location = new System.Drawing.Point(93, 28);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(109, 28);
+            this.label8.Size = new System.Drawing.Size(108, 28);
             this.label8.TabIndex = 26;
             this.label8.Text = "Official Team Line Up";
             this.label8.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -344,7 +344,7 @@
             // 
             this.label14.Location = new System.Drawing.Point(93, 196);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(109, 20);
+            this.label14.Size = new System.Drawing.Size(108, 20);
             this.label14.TabIndex = 32;
             this.label14.Text = "Doubles Line Up";
             this.label14.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -355,7 +355,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tmB4FName.Location = new System.Drawing.Point(93, 171);
             this.tmB4FName.Name = "tmB4FName";
-            this.tmB4FName.Size = new System.Drawing.Size(109, 20);
+            this.tmB4FName.Size = new System.Drawing.Size(108, 20);
             this.tmB4FName.TabIndex = 26;
             // 
             // tmB3FName
@@ -364,7 +364,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tmB3FName.Location = new System.Drawing.Point(93, 143);
             this.tmB3FName.Name = "tmB3FName";
-            this.tmB3FName.Size = new System.Drawing.Size(109, 20);
+            this.tmB3FName.Size = new System.Drawing.Size(108, 20);
             this.tmB3FName.TabIndex = 19;
             // 
             // tmB2FName
@@ -373,7 +373,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tmB2FName.Location = new System.Drawing.Point(93, 115);
             this.tmB2FName.Name = "tmB2FName";
-            this.tmB2FName.Size = new System.Drawing.Size(109, 20);
+            this.tmB2FName.Size = new System.Drawing.Size(108, 20);
             this.tmB2FName.TabIndex = 12;
             // 
             // tmB1FName
@@ -382,14 +382,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.tmB1FName.Location = new System.Drawing.Point(93, 87);
             this.tmB1FName.Name = "tmB1FName";
-            this.tmB1FName.Size = new System.Drawing.Size(109, 20);
+            this.tmB1FName.Size = new System.Drawing.Size(108, 20);
             this.tmB1FName.TabIndex = 5;
             // 
             // tmB4Average
             // 
             this.tmB4Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB4Average.Location = new System.Drawing.Point(559, 171);
+            this.tmB4Average.Location = new System.Drawing.Point(558, 171);
             this.tmB4Average.Name = "tmB4Average";
             this.tmB4Average.Size = new System.Drawing.Size(47, 20);
             this.tmB4Average.TabIndex = 30;
@@ -398,7 +398,7 @@
             // 
             this.tmB3Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB3Average.Location = new System.Drawing.Point(559, 143);
+            this.tmB3Average.Location = new System.Drawing.Point(558, 143);
             this.tmB3Average.Name = "tmB3Average";
             this.tmB3Average.Size = new System.Drawing.Size(47, 20);
             this.tmB3Average.TabIndex = 23;
@@ -407,7 +407,7 @@
             // 
             this.tmB2Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB2Average.Location = new System.Drawing.Point(559, 115);
+            this.tmB2Average.Location = new System.Drawing.Point(558, 115);
             this.tmB2Average.Name = "tmB2Average";
             this.tmB2Average.Size = new System.Drawing.Size(47, 20);
             this.tmB2Average.TabIndex = 16;
@@ -416,7 +416,7 @@
             // 
             this.tmB1Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB1Average.Location = new System.Drawing.Point(559, 87);
+            this.tmB1Average.Location = new System.Drawing.Point(558, 87);
             this.tmB1Average.Name = "tmB1Average";
             this.tmB1Average.Size = new System.Drawing.Size(47, 20);
             this.tmB1Average.TabIndex = 9;
@@ -425,7 +425,7 @@
             // 
             this.tmB4USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB4USBC.Location = new System.Drawing.Point(612, 171);
+            this.tmB4USBC.Location = new System.Drawing.Point(611, 171);
             this.tmB4USBC.Name = "tmB4USBC";
             this.tmB4USBC.Size = new System.Drawing.Size(72, 20);
             this.tmB4USBC.TabIndex = 31;
@@ -434,7 +434,7 @@
             // 
             this.tmB3USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB3USBC.Location = new System.Drawing.Point(612, 143);
+            this.tmB3USBC.Location = new System.Drawing.Point(611, 143);
             this.tmB3USBC.Name = "tmB3USBC";
             this.tmB3USBC.Size = new System.Drawing.Size(72, 20);
             this.tmB3USBC.TabIndex = 24;
@@ -443,7 +443,7 @@
             // 
             this.tmB2USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB2USBC.Location = new System.Drawing.Point(612, 115);
+            this.tmB2USBC.Location = new System.Drawing.Point(611, 115);
             this.tmB2USBC.Name = "tmB2USBC";
             this.tmB2USBC.Size = new System.Drawing.Size(72, 20);
             this.tmB2USBC.TabIndex = 17;
@@ -452,14 +452,14 @@
             // 
             this.tmB1USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB1USBC.Location = new System.Drawing.Point(612, 87);
+            this.tmB1USBC.Location = new System.Drawing.Point(611, 87);
             this.tmB1USBC.Name = "tmB1USBC";
             this.tmB1USBC.Size = new System.Drawing.Size(72, 20);
             this.tmB1USBC.TabIndex = 10;
             // 
             // label12
             // 
-            this.label12.Location = new System.Drawing.Point(612, 56);
+            this.label12.Location = new System.Drawing.Point(611, 56);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(69, 28);
             this.label12.TabIndex = 30;
@@ -468,7 +468,7 @@
             // 
             // label11
             // 
-            this.label11.Location = new System.Drawing.Point(559, 56);
+            this.label11.Location = new System.Drawing.Point(558, 56);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(47, 28);
             this.label11.TabIndex = 29;
@@ -479,7 +479,7 @@
             // 
             this.tmB4TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB4TNBA.Location = new System.Drawing.Point(690, 171);
+            this.tmB4TNBA.Location = new System.Drawing.Point(689, 171);
             this.tmB4TNBA.Name = "tmB4TNBA";
             this.tmB4TNBA.Size = new System.Drawing.Size(80, 20);
             this.tmB4TNBA.TabIndex = 32;
@@ -488,7 +488,7 @@
             // 
             this.tmB3TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB3TNBA.Location = new System.Drawing.Point(690, 143);
+            this.tmB3TNBA.Location = new System.Drawing.Point(689, 143);
             this.tmB3TNBA.Name = "tmB3TNBA";
             this.tmB3TNBA.Size = new System.Drawing.Size(80, 20);
             this.tmB3TNBA.TabIndex = 25;
@@ -497,7 +497,7 @@
             // 
             this.tmB2TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB2TNBA.Location = new System.Drawing.Point(690, 115);
+            this.tmB2TNBA.Location = new System.Drawing.Point(689, 115);
             this.tmB2TNBA.Name = "tmB2TNBA";
             this.tmB2TNBA.Size = new System.Drawing.Size(80, 20);
             this.tmB2TNBA.TabIndex = 18;
@@ -506,14 +506,14 @@
             // 
             this.tmB1TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB1TNBA.Location = new System.Drawing.Point(690, 87);
+            this.tmB1TNBA.Location = new System.Drawing.Point(689, 87);
             this.tmB1TNBA.Name = "tmB1TNBA";
             this.tmB1TNBA.Size = new System.Drawing.Size(80, 20);
             this.tmB1TNBA.TabIndex = 11;
             // 
             // label13
             // 
-            this.label13.Location = new System.Drawing.Point(690, 56);
+            this.label13.Location = new System.Drawing.Point(689, 56);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(56, 28);
             this.label13.TabIndex = 31;
@@ -524,7 +524,7 @@
             // 
             this.tmB1Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB1Address.Location = new System.Drawing.Point(374, 87);
+            this.tmB1Address.Location = new System.Drawing.Point(373, 87);
             this.tmB1Address.Name = "tmB1Address";
             this.tmB1Address.Size = new System.Drawing.Size(179, 20);
             this.tmB1Address.TabIndex = 8;
@@ -533,7 +533,7 @@
             // 
             this.tmB2Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB2Address.Location = new System.Drawing.Point(374, 115);
+            this.tmB2Address.Location = new System.Drawing.Point(373, 115);
             this.tmB2Address.Name = "tmB2Address";
             this.tmB2Address.Size = new System.Drawing.Size(179, 20);
             this.tmB2Address.TabIndex = 15;
@@ -542,7 +542,7 @@
             // 
             this.tmB3Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB3Address.Location = new System.Drawing.Point(374, 143);
+            this.tmB3Address.Location = new System.Drawing.Point(373, 143);
             this.tmB3Address.Name = "tmB3Address";
             this.tmB3Address.Size = new System.Drawing.Size(179, 20);
             this.tmB3Address.TabIndex = 22;
@@ -551,14 +551,14 @@
             // 
             this.tmB4Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB4Address.Location = new System.Drawing.Point(374, 171);
+            this.tmB4Address.Location = new System.Drawing.Point(373, 171);
             this.tmB4Address.Name = "tmB4Address";
             this.tmB4Address.Size = new System.Drawing.Size(179, 20);
             this.tmB4Address.TabIndex = 29;
             // 
             // label10
             // 
-            this.label10.Location = new System.Drawing.Point(374, 56);
+            this.label10.Location = new System.Drawing.Point(373, 56);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(77, 28);
             this.label10.TabIndex = 28;
@@ -572,14 +572,14 @@
             this.tmB1Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.tmB1Sex.Location = new System.Drawing.Point(324, 87);
+            this.tmB1Sex.Location = new System.Drawing.Point(323, 87);
             this.tmB1Sex.Name = "tmB1Sex";
             this.tmB1Sex.Size = new System.Drawing.Size(41, 21);
             this.tmB1Sex.TabIndex = 7;
             // 
             // label9
             // 
-            this.label9.Location = new System.Drawing.Point(324, 56);
+            this.label9.Location = new System.Drawing.Point(323, 56);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(41, 28);
             this.label9.TabIndex = 27;
@@ -593,7 +593,7 @@
             this.tmB2Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.tmB2Sex.Location = new System.Drawing.Point(324, 115);
+            this.tmB2Sex.Location = new System.Drawing.Point(323, 115);
             this.tmB2Sex.Name = "tmB2Sex";
             this.tmB2Sex.Size = new System.Drawing.Size(41, 21);
             this.tmB2Sex.TabIndex = 14;
@@ -605,7 +605,7 @@
             this.tmB3Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.tmB3Sex.Location = new System.Drawing.Point(324, 143);
+            this.tmB3Sex.Location = new System.Drawing.Point(323, 143);
             this.tmB3Sex.Name = "tmB3Sex";
             this.tmB3Sex.Size = new System.Drawing.Size(41, 21);
             this.tmB3Sex.TabIndex = 21;
@@ -617,7 +617,7 @@
             this.tmB4Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.tmB4Sex.Location = new System.Drawing.Point(324, 171);
+            this.tmB4Sex.Location = new System.Drawing.Point(323, 171);
             this.tmB4Sex.Name = "tmB4Sex";
             this.tmB4Sex.Size = new System.Drawing.Size(41, 21);
             this.tmB4Sex.TabIndex = 28;
@@ -633,7 +633,7 @@
             // 
             // label26
             // 
-            this.label26.Location = new System.Drawing.Point(208, 56);
+            this.label26.Location = new System.Drawing.Point(207, 56);
             this.label26.Name = "label26";
             this.label26.Size = new System.Drawing.Size(110, 28);
             this.label26.TabIndex = 92;
@@ -644,14 +644,14 @@
             // 
             this.stateTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.stateTxt.Location = new System.Drawing.Point(776, 3);
+            this.stateTxt.Location = new System.Drawing.Point(775, 3);
             this.stateTxt.Name = "stateTxt";
             this.stateTxt.Size = new System.Drawing.Size(87, 20);
             this.stateTxt.TabIndex = 4;
             // 
             // label7
             // 
-            this.label7.Location = new System.Drawing.Point(690, 0);
+            this.label7.Location = new System.Drawing.Point(689, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(80, 28);
             this.label7.TabIndex = 24;
@@ -662,14 +662,14 @@
             // 
             this.cityTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.cityTxt.Location = new System.Drawing.Point(612, 3);
+            this.cityTxt.Location = new System.Drawing.Point(611, 3);
             this.cityTxt.Name = "cityTxt";
             this.cityTxt.Size = new System.Drawing.Size(72, 20);
             this.cityTxt.TabIndex = 3;
             // 
             // label5
             // 
-            this.label5.Location = new System.Drawing.Point(559, 0);
+            this.label5.Location = new System.Drawing.Point(558, 0);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(25, 28);
             this.label5.TabIndex = 17;
@@ -680,14 +680,14 @@
             // 
             this.senateTxt.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.senateTxt.Location = new System.Drawing.Point(374, 3);
+            this.senateTxt.Location = new System.Drawing.Point(373, 3);
             this.senateTxt.Name = "senateTxt";
             this.senateTxt.Size = new System.Drawing.Size(179, 20);
             this.senateTxt.TabIndex = 2;
             // 
             // label4
             // 
-            this.label4.Location = new System.Drawing.Point(324, 0);
+            this.label4.Location = new System.Drawing.Point(323, 0);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(41, 28);
             this.label4.TabIndex = 16;
@@ -698,7 +698,7 @@
             // 
             this.tmB1LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB1LName.Location = new System.Drawing.Point(208, 87);
+            this.tmB1LName.Location = new System.Drawing.Point(207, 87);
             this.tmB1LName.Name = "tmB1LName";
             this.tmB1LName.Size = new System.Drawing.Size(110, 20);
             this.tmB1LName.TabIndex = 6;
@@ -707,7 +707,7 @@
             // 
             this.tmB2LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.tmB2LName.Location = new System.Drawing.Point(208, 115);
+            this.tmB2LName.Location = new System.Drawing.Point(207, 115);
             this.tmB2LName.Name = "tmB2LName";
             this.tmB2LName.Size = new System.Drawing.Size(110, 20);
             this.tmB2LName.TabIndex = 13;
@@ -718,7 +718,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dblB4FName.Location = new System.Drawing.Point(93, 331);
             this.dblB4FName.Name = "dblB4FName";
-            this.dblB4FName.Size = new System.Drawing.Size(109, 20);
+            this.dblB4FName.Size = new System.Drawing.Size(108, 20);
             this.dblB4FName.TabIndex = 57;
             // 
             // dblB3FName
@@ -727,7 +727,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dblB3FName.Location = new System.Drawing.Point(93, 303);
             this.dblB3FName.Name = "dblB3FName";
-            this.dblB3FName.Size = new System.Drawing.Size(109, 20);
+            this.dblB3FName.Size = new System.Drawing.Size(108, 20);
             this.dblB3FName.TabIndex = 49;
             // 
             // dblB2FName
@@ -736,7 +736,7 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dblB2FName.Location = new System.Drawing.Point(93, 275);
             this.dblB2FName.Name = "dblB2FName";
-            this.dblB2FName.Size = new System.Drawing.Size(109, 20);
+            this.dblB2FName.Size = new System.Drawing.Size(108, 20);
             this.dblB2FName.TabIndex = 41;
             // 
             // dblB1FName
@@ -745,14 +745,14 @@
             | System.Windows.Forms.AnchorStyles.Right)));
             this.dblB1FName.Location = new System.Drawing.Point(93, 247);
             this.dblB1FName.Name = "dblB1FName";
-            this.dblB1FName.Size = new System.Drawing.Size(109, 20);
+            this.dblB1FName.Size = new System.Drawing.Size(108, 20);
             this.dblB1FName.TabIndex = 33;
             // 
             // dblB4LName
             // 
             this.dblB4LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB4LName.Location = new System.Drawing.Point(208, 331);
+            this.dblB4LName.Location = new System.Drawing.Point(207, 331);
             this.dblB4LName.Name = "dblB4LName";
             this.dblB4LName.Size = new System.Drawing.Size(110, 20);
             this.dblB4LName.TabIndex = 58;
@@ -761,7 +761,7 @@
             // 
             this.dblB3LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB3LName.Location = new System.Drawing.Point(208, 303);
+            this.dblB3LName.Location = new System.Drawing.Point(207, 303);
             this.dblB3LName.Name = "dblB3LName";
             this.dblB3LName.Size = new System.Drawing.Size(110, 20);
             this.dblB3LName.TabIndex = 50;
@@ -770,7 +770,7 @@
             // 
             this.dblB2LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB2LName.Location = new System.Drawing.Point(208, 275);
+            this.dblB2LName.Location = new System.Drawing.Point(207, 275);
             this.dblB2LName.Name = "dblB2LName";
             this.dblB2LName.Size = new System.Drawing.Size(110, 20);
             this.dblB2LName.TabIndex = 42;
@@ -779,7 +779,7 @@
             // 
             this.dblB1LName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB1LName.Location = new System.Drawing.Point(208, 247);
+            this.dblB1LName.Location = new System.Drawing.Point(207, 247);
             this.dblB1LName.Name = "dblB1LName";
             this.dblB1LName.Size = new System.Drawing.Size(110, 20);
             this.dblB1LName.TabIndex = 34;
@@ -791,7 +791,7 @@
             this.dblB4Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.dblB4Sex.Location = new System.Drawing.Point(324, 331);
+            this.dblB4Sex.Location = new System.Drawing.Point(323, 331);
             this.dblB4Sex.Name = "dblB4Sex";
             this.dblB4Sex.Size = new System.Drawing.Size(41, 21);
             this.dblB4Sex.TabIndex = 59;
@@ -803,7 +803,7 @@
             this.dblB3Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.dblB3Sex.Location = new System.Drawing.Point(324, 303);
+            this.dblB3Sex.Location = new System.Drawing.Point(323, 303);
             this.dblB3Sex.Name = "dblB3Sex";
             this.dblB3Sex.Size = new System.Drawing.Size(41, 21);
             this.dblB3Sex.TabIndex = 51;
@@ -815,7 +815,7 @@
             this.dblB2Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.dblB2Sex.Location = new System.Drawing.Point(324, 275);
+            this.dblB2Sex.Location = new System.Drawing.Point(323, 275);
             this.dblB2Sex.Name = "dblB2Sex";
             this.dblB2Sex.Size = new System.Drawing.Size(41, 21);
             this.dblB2Sex.TabIndex = 43;
@@ -827,7 +827,7 @@
             this.dblB1Sex.Items.AddRange(new object[] {
             "Male",
             "Female"});
-            this.dblB1Sex.Location = new System.Drawing.Point(324, 247);
+            this.dblB1Sex.Location = new System.Drawing.Point(323, 247);
             this.dblB1Sex.Name = "dblB1Sex";
             this.dblB1Sex.Size = new System.Drawing.Size(41, 21);
             this.dblB1Sex.TabIndex = 35;
@@ -836,7 +836,7 @@
             // 
             this.dblB4Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB4Address.Location = new System.Drawing.Point(374, 331);
+            this.dblB4Address.Location = new System.Drawing.Point(373, 331);
             this.dblB4Address.Name = "dblB4Address";
             this.dblB4Address.Size = new System.Drawing.Size(179, 20);
             this.dblB4Address.TabIndex = 60;
@@ -845,7 +845,7 @@
             // 
             this.dblB3Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB3Address.Location = new System.Drawing.Point(374, 303);
+            this.dblB3Address.Location = new System.Drawing.Point(373, 303);
             this.dblB3Address.Name = "dblB3Address";
             this.dblB3Address.Size = new System.Drawing.Size(179, 20);
             this.dblB3Address.TabIndex = 52;
@@ -854,7 +854,7 @@
             // 
             this.dblB2Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB2Address.Location = new System.Drawing.Point(374, 275);
+            this.dblB2Address.Location = new System.Drawing.Point(373, 275);
             this.dblB2Address.Name = "dblB2Address";
             this.dblB2Address.Size = new System.Drawing.Size(179, 20);
             this.dblB2Address.TabIndex = 44;
@@ -863,14 +863,14 @@
             // 
             this.dblB1Address.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB1Address.Location = new System.Drawing.Point(374, 247);
+            this.dblB1Address.Location = new System.Drawing.Point(373, 247);
             this.dblB1Address.Name = "dblB1Address";
             this.dblB1Address.Size = new System.Drawing.Size(179, 20);
             this.dblB1Address.TabIndex = 36;
             // 
             // label16
             // 
-            this.label16.Location = new System.Drawing.Point(374, 216);
+            this.label16.Location = new System.Drawing.Point(373, 216);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(77, 20);
             this.label16.TabIndex = 34;
@@ -881,7 +881,7 @@
             // 
             this.dblB4Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB4Average.Location = new System.Drawing.Point(559, 331);
+            this.dblB4Average.Location = new System.Drawing.Point(558, 331);
             this.dblB4Average.Name = "dblB4Average";
             this.dblB4Average.Size = new System.Drawing.Size(47, 20);
             this.dblB4Average.TabIndex = 61;
@@ -890,7 +890,7 @@
             // 
             this.dblB2Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB2Average.Location = new System.Drawing.Point(559, 275);
+            this.dblB2Average.Location = new System.Drawing.Point(558, 275);
             this.dblB2Average.Name = "dblB2Average";
             this.dblB2Average.Size = new System.Drawing.Size(47, 20);
             this.dblB2Average.TabIndex = 45;
@@ -899,14 +899,14 @@
             // 
             this.dblB1Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB1Average.Location = new System.Drawing.Point(559, 247);
+            this.dblB1Average.Location = new System.Drawing.Point(558, 247);
             this.dblB1Average.Name = "dblB1Average";
             this.dblB1Average.Size = new System.Drawing.Size(47, 20);
             this.dblB1Average.TabIndex = 37;
             // 
             // label17
             // 
-            this.label17.Location = new System.Drawing.Point(559, 216);
+            this.label17.Location = new System.Drawing.Point(558, 216);
             this.label17.Name = "label17";
             this.label17.Size = new System.Drawing.Size(47, 20);
             this.label17.TabIndex = 35;
@@ -917,7 +917,7 @@
             // 
             this.dblB4USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB4USBC.Location = new System.Drawing.Point(612, 331);
+            this.dblB4USBC.Location = new System.Drawing.Point(611, 331);
             this.dblB4USBC.Name = "dblB4USBC";
             this.dblB4USBC.Size = new System.Drawing.Size(72, 20);
             this.dblB4USBC.TabIndex = 62;
@@ -926,7 +926,7 @@
             // 
             this.dblB3USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB3USBC.Location = new System.Drawing.Point(612, 303);
+            this.dblB3USBC.Location = new System.Drawing.Point(611, 303);
             this.dblB3USBC.Name = "dblB3USBC";
             this.dblB3USBC.Size = new System.Drawing.Size(72, 20);
             this.dblB3USBC.TabIndex = 54;
@@ -935,7 +935,7 @@
             // 
             this.dblB2USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB2USBC.Location = new System.Drawing.Point(612, 275);
+            this.dblB2USBC.Location = new System.Drawing.Point(611, 275);
             this.dblB2USBC.Name = "dblB2USBC";
             this.dblB2USBC.Size = new System.Drawing.Size(72, 20);
             this.dblB2USBC.TabIndex = 46;
@@ -944,14 +944,14 @@
             // 
             this.dblB1USBC.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB1USBC.Location = new System.Drawing.Point(612, 247);
+            this.dblB1USBC.Location = new System.Drawing.Point(611, 247);
             this.dblB1USBC.Name = "dblB1USBC";
             this.dblB1USBC.Size = new System.Drawing.Size(72, 20);
             this.dblB1USBC.TabIndex = 38;
             // 
             // label18
             // 
-            this.label18.Location = new System.Drawing.Point(612, 216);
+            this.label18.Location = new System.Drawing.Point(611, 216);
             this.label18.Name = "label18";
             this.label18.Size = new System.Drawing.Size(56, 20);
             this.label18.TabIndex = 36;
@@ -962,7 +962,7 @@
             // 
             this.dblB4TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB4TNBA.Location = new System.Drawing.Point(690, 331);
+            this.dblB4TNBA.Location = new System.Drawing.Point(689, 331);
             this.dblB4TNBA.Name = "dblB4TNBA";
             this.dblB4TNBA.Size = new System.Drawing.Size(80, 20);
             this.dblB4TNBA.TabIndex = 63;
@@ -971,7 +971,7 @@
             // 
             this.dblB3TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB3TNBA.Location = new System.Drawing.Point(690, 303);
+            this.dblB3TNBA.Location = new System.Drawing.Point(689, 303);
             this.dblB3TNBA.Name = "dblB3TNBA";
             this.dblB3TNBA.Size = new System.Drawing.Size(80, 20);
             this.dblB3TNBA.TabIndex = 55;
@@ -980,7 +980,7 @@
             // 
             this.dblB2TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB2TNBA.Location = new System.Drawing.Point(690, 275);
+            this.dblB2TNBA.Location = new System.Drawing.Point(689, 275);
             this.dblB2TNBA.Name = "dblB2TNBA";
             this.dblB2TNBA.Size = new System.Drawing.Size(80, 20);
             this.dblB2TNBA.TabIndex = 47;
@@ -989,14 +989,14 @@
             // 
             this.dblB1TNBA.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB1TNBA.Location = new System.Drawing.Point(690, 247);
+            this.dblB1TNBA.Location = new System.Drawing.Point(689, 247);
             this.dblB1TNBA.Name = "dblB1TNBA";
             this.dblB1TNBA.Size = new System.Drawing.Size(80, 20);
             this.dblB1TNBA.TabIndex = 39;
             // 
             // label19
             // 
-            this.label19.Location = new System.Drawing.Point(690, 216);
+            this.label19.Location = new System.Drawing.Point(689, 216);
             this.label19.Name = "label19";
             this.label19.Size = new System.Drawing.Size(56, 20);
             this.label19.TabIndex = 37;
@@ -1013,7 +1013,7 @@
             "Bowler #2",
             "Bowler #3",
             "Bowler #4"});
-            this.same4.Location = new System.Drawing.Point(776, 331);
+            this.same4.Location = new System.Drawing.Point(775, 331);
             this.same4.Name = "same4";
             this.same4.Size = new System.Drawing.Size(87, 21);
             this.same4.TabIndex = 64;
@@ -1029,7 +1029,7 @@
             "Bowler #2",
             "Bowler #3",
             "Bowler #4"});
-            this.same3.Location = new System.Drawing.Point(776, 303);
+            this.same3.Location = new System.Drawing.Point(775, 303);
             this.same3.Name = "same3";
             this.same3.Size = new System.Drawing.Size(87, 21);
             this.same3.TabIndex = 56;
@@ -1045,7 +1045,7 @@
             "Bowler #2",
             "Bowler #3",
             "Bowler #4"});
-            this.same2.Location = new System.Drawing.Point(776, 275);
+            this.same2.Location = new System.Drawing.Point(775, 275);
             this.same2.Name = "same2";
             this.same2.Size = new System.Drawing.Size(87, 21);
             this.same2.TabIndex = 48;
@@ -1061,7 +1061,7 @@
             "Bowler #2",
             "Bowler #3",
             "Bowler #4"});
-            this.same1.Location = new System.Drawing.Point(776, 247);
+            this.same1.Location = new System.Drawing.Point(775, 247);
             this.same1.Name = "same1";
             this.same1.Size = new System.Drawing.Size(87, 21);
             this.same1.TabIndex = 40;
@@ -1069,7 +1069,7 @@
             // 
             // label24
             // 
-            this.label24.Location = new System.Drawing.Point(776, 216);
+            this.label24.Location = new System.Drawing.Point(775, 216);
             this.label24.Name = "label24";
             this.label24.Size = new System.Drawing.Size(87, 20);
             this.label24.TabIndex = 90;
@@ -1080,14 +1080,14 @@
             // 
             this.dblB3Average.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dblB3Average.Location = new System.Drawing.Point(559, 303);
+            this.dblB3Average.Location = new System.Drawing.Point(558, 303);
             this.dblB3Average.Name = "dblB3Average";
             this.dblB3Average.Size = new System.Drawing.Size(47, 20);
             this.dblB3Average.TabIndex = 53;
             // 
             // label29
             // 
-            this.label29.Location = new System.Drawing.Point(869, 216);
+            this.label29.Location = new System.Drawing.Point(868, 216);
             this.label29.Name = "label29";
             this.label29.Size = new System.Drawing.Size(82, 20);
             this.label29.TabIndex = 93;
@@ -1097,7 +1097,7 @@
             // chkb1S
             // 
             this.chkb1S.AutoSize = true;
-            this.chkb1S.Location = new System.Drawing.Point(869, 247);
+            this.chkb1S.Location = new System.Drawing.Point(868, 247);
             this.chkb1S.Name = "chkb1S";
             this.chkb1S.Size = new System.Drawing.Size(15, 14);
             this.chkb1S.TabIndex = 94;
@@ -1106,7 +1106,7 @@
             // chkb2S
             // 
             this.chkb2S.AutoSize = true;
-            this.chkb2S.Location = new System.Drawing.Point(869, 275);
+            this.chkb2S.Location = new System.Drawing.Point(868, 275);
             this.chkb2S.Name = "chkb2S";
             this.chkb2S.Size = new System.Drawing.Size(15, 14);
             this.chkb2S.TabIndex = 95;
@@ -1115,7 +1115,7 @@
             // chkb3S
             // 
             this.chkb3S.AutoSize = true;
-            this.chkb3S.Location = new System.Drawing.Point(869, 303);
+            this.chkb3S.Location = new System.Drawing.Point(868, 303);
             this.chkb3S.Name = "chkb3S";
             this.chkb3S.Size = new System.Drawing.Size(15, 14);
             this.chkb3S.TabIndex = 96;
@@ -1124,7 +1124,7 @@
             // chkb4S
             // 
             this.chkb4S.AutoSize = true;
-            this.chkb4S.Location = new System.Drawing.Point(869, 331);
+            this.chkb4S.Location = new System.Drawing.Point(868, 331);
             this.chkb4S.Name = "chkb4S";
             this.chkb4S.Size = new System.Drawing.Size(15, 14);
             this.chkb4S.TabIndex = 97;
@@ -1229,7 +1229,7 @@
             // 
             // label15
             // 
-            this.label15.Location = new System.Drawing.Point(324, 216);
+            this.label15.Location = new System.Drawing.Point(323, 216);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(41, 20);
             this.label15.TabIndex = 33;

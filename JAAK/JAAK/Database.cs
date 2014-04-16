@@ -5,7 +5,7 @@ using System.Data.SQLite;
 using System.Windows.Forms;
 
 
-//deleteevent created but unimplemented
+
 public class Database
 {
 
@@ -182,11 +182,10 @@ public class Database
         else { return true; }
     }
 
-    public void addBowler(String fn, String mi, String ln, String gen, String add, String city, String st, String zc, String TNBA, String USBC, String lka, String ca, String sen)
+    public void addBowler(String Bid, String fn, String mi, String ln, String gen, String add, String city, String st, String zc, String TNBA, String USBC, String lka, String ca, String sen)
     {
         Database db = new Database();
         Dictionary<String, String> data = new Dictionary<String, String>();
-        String Bid = db.querySingle("Select Count(*) from Bowler") + 1;
         data.Add("BowlerID", Bid);
         data.Add("FirstName", fn);
         data.Add("MI", mi);
@@ -211,7 +210,7 @@ public class Database
         }
     }
 
-    public void addBowlingCenter(String cn, String gm, String add, String c, String s, String zc, String phone)
+    public void addBowlingCenter(String cn, String gm, String add, String c, String s, String zc, String phone, String lane)
     {
         Database db = new Database();
         Dictionary<String, String> data = new Dictionary<String, String>();
@@ -222,6 +221,7 @@ public class Database
         data.Add("State", s);
         data.Add("ZipCode", zc);
         data.Add("PhoneNumber", phone);
+        data.Add("Lanes", lane);
         try
         {
             db.Insert("BowlingCenter", data);
@@ -332,7 +332,7 @@ public class Database
         }
     }
 
-    public void addTeam(String Reg, String Tid, String Sid, String Did, String type, String Bid1, String Bid2, String Bid3, String Bid4, String sen, String c, String s)
+    public void addTeam(String Reg, String Tid, String Sid, String Did, String name, String type, String Bid1, String Bid2, String Bid3, String Bid4, String sen, String c, String s)
     {
         Database db = new Database();
         Dictionary<String, String> data = new Dictionary<String, String>();
@@ -340,6 +340,7 @@ public class Database
         data.Add("TournamentID", Tid);
         data.Add("SquadID", Sid);
         data.Add("DivisionID", Did);
+        data.Add("Name", name);
         data.Add("Type", type);
         data.Add("Bowler1", Bid1);
         data.Add("Bowler2", Bid2);
@@ -414,7 +415,7 @@ public class Database
         }
     }
 
-    public void updateBowlingCenter(String cn, String gm, String add, String c, String s, String zc, String phone)
+    public void updateBowlingCenter(String cn, String gm, String add, String c, String s, String zc, String phone, String lane)
     {
         Database db = new Database();
         Dictionary<String, String> data = new Dictionary<String, String>();
@@ -425,6 +426,7 @@ public class Database
         data.Add("State", s);
         data.Add("ZipCode", zc);
         data.Add("PhoneNumber", phone);
+        data.Add("Lanes", lane);
         try
         {
             db.Update("BowlingCenter", data, String.Format("BowlingCenter.CenterName = {0}", cn));
@@ -535,7 +537,7 @@ public class Database
         }
     }
 
-    public void updateTeam(String Reg, String Tid, String Sid, String Did, String type, String Bid1, String Bid2, String Bid3, String Bid4, String sen, String c, String s)
+    public void updateTeam(String Reg, String Tid, String Sid, String Did, String name, String type, String Bid1, String Bid2, String Bid3, String Bid4, String sen, String c, String s)
     {
         Database db = new Database();
         Dictionary<String, String> data = new Dictionary<String, String>();
@@ -543,6 +545,7 @@ public class Database
         data.Add("TournamentID", Tid);
         data.Add("SquadID", Sid);
         data.Add("DivisionID", Did);
+        data.Add("Name", name);
         data.Add("Type", type);
         data.Add("Bowler1", Bid1);
         data.Add("Bowler2", Bid2);
@@ -609,6 +612,8 @@ public class Database
 
     public void deleteEvent(String Eid)
     {
+        Database db = new Database();
+        db.Delete("Event", String.Format("Event.EventID = {0}", Eid));
     }
 
     public void deleteScore(String Bid)

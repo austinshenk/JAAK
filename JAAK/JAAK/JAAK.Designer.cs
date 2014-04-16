@@ -31,6 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(JAAK));
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.Tournament = new System.Windows.Forms.TabPage();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.txtPlaces = new System.Windows.Forms.TextBox();
+            this.txtPercent = new System.Windows.Forms.TextBox();
+            this.radPlaces = new System.Windows.Forms.RadioButton();
+            this.label7 = new System.Windows.Forms.Label();
+            this.radPercent = new System.Windows.Forms.RadioButton();
+            this.chkDiff = new System.Windows.Forms.CheckBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.txtDirZip = new System.Windows.Forms.TextBox();
+            this.txtDirState = new System.Windows.Forms.TextBox();
+            this.txtDirCity = new System.Windows.Forms.TextBox();
+            this.txtDirAdd = new System.Windows.Forms.TextBox();
+            this.txtDirPN = new System.Windows.Forms.TextBox();
+            this.txtDirName = new System.Windows.Forms.TextBox();
+            this.label13 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
+            this.label11 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
+            this.label9 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
+            this.lblTournamentName = new System.Windows.Forms.Label();
             this.Events = new System.Windows.Forms.TabPage();
             this.splitContainer2 = new System.Windows.Forms.SplitContainer();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
@@ -85,6 +106,9 @@
             this.btnNew = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.tabControl1.SuspendLayout();
+            this.Tournament.SuspendLayout();
+            this.groupBox2.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.Events.SuspendLayout();
             this.splitContainer2.Panel1.SuspendLayout();
             this.splitContainer2.Panel2.SuspendLayout();
@@ -125,12 +149,216 @@
             // 
             // Tournament
             // 
+            this.Tournament.Controls.Add(this.groupBox2);
+            this.Tournament.Controls.Add(this.groupBox1);
+            this.Tournament.Controls.Add(this.lblTournamentName);
             this.Tournament.Location = new System.Drawing.Point(4, 23);
             this.Tournament.Name = "Tournament";
             this.Tournament.Size = new System.Drawing.Size(778, 359);
             this.Tournament.TabIndex = 4;
             this.Tournament.Text = "Tournament";
             this.Tournament.UseVisualStyleBackColor = true;
+            // 
+            // groupBox2
+            // 
+            this.groupBox2.Controls.Add(this.txtPlaces);
+            this.groupBox2.Controls.Add(this.txtPercent);
+            this.groupBox2.Controls.Add(this.radPlaces);
+            this.groupBox2.Controls.Add(this.label7);
+            this.groupBox2.Controls.Add(this.radPercent);
+            this.groupBox2.Controls.Add(this.chkDiff);
+            this.groupBox2.Location = new System.Drawing.Point(472, 75);
+            this.groupBox2.Name = "groupBox2";
+            this.groupBox2.Size = new System.Drawing.Size(259, 200);
+            this.groupBox2.TabIndex = 2;
+            this.groupBox2.TabStop = false;
+            this.groupBox2.Text = "Prize Information";
+            this.groupBox2.Visible = false;
+            // 
+            // txtPlaces
+            // 
+            this.txtPlaces.Location = new System.Drawing.Point(153, 106);
+            this.txtPlaces.Name = "txtPlaces";
+            this.txtPlaces.Size = new System.Drawing.Size(100, 20);
+            this.txtPlaces.TabIndex = 5;
+            // 
+            // txtPercent
+            // 
+            this.txtPercent.Location = new System.Drawing.Point(153, 79);
+            this.txtPercent.Name = "txtPercent";
+            this.txtPercent.Size = new System.Drawing.Size(100, 20);
+            this.txtPercent.TabIndex = 4;
+            // 
+            // radPlaces
+            // 
+            this.radPlaces.AutoSize = true;
+            this.radPlaces.Location = new System.Drawing.Point(6, 107);
+            this.radPlaces.Name = "radPlaces";
+            this.radPlaces.Size = new System.Drawing.Size(132, 18);
+            this.radPlaces.TabIndex = 3;
+            this.radPlaces.TabStop = true;
+            this.radPlaces.Text = "top places of teams";
+            this.radPlaces.UseVisualStyleBackColor = true;
+            this.radPlaces.CheckedChanged += new System.EventHandler(this.radPlaces_CheckedChanged);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(10, 63);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(113, 14);
+            this.label7.TabIndex = 2;
+            this.label7.Text = "We will pay the....";
+            // 
+            // radPercent
+            // 
+            this.radPercent.AutoSize = true;
+            this.radPercent.Location = new System.Drawing.Point(6, 79);
+            this.radPercent.Name = "radPercent";
+            this.radPercent.Size = new System.Drawing.Size(141, 18);
+            this.radPercent.TabIndex = 1;
+            this.radPercent.TabStop = true;
+            this.radPercent.Text = "top percent of teams";
+            this.radPercent.UseVisualStyleBackColor = true;
+            this.radPercent.CheckedChanged += new System.EventHandler(this.radPercent_CheckedChanged);
+            // 
+            // chkDiff
+            // 
+            this.chkDiff.AutoSize = true;
+            this.chkDiff.Location = new System.Drawing.Point(10, 24);
+            this.chkDiff.Name = "chkDiff";
+            this.chkDiff.Size = new System.Drawing.Size(174, 32);
+            this.chkDiff.TabIndex = 0;
+            this.chkDiff.Text = "This information will be \r\ndifferent for each division";
+            this.chkDiff.UseVisualStyleBackColor = true;
+            this.chkDiff.CheckedChanged += new System.EventHandler(this.chkDiff_CheckedChanged);
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.txtDirZip);
+            this.groupBox1.Controls.Add(this.txtDirState);
+            this.groupBox1.Controls.Add(this.txtDirCity);
+            this.groupBox1.Controls.Add(this.txtDirAdd);
+            this.groupBox1.Controls.Add(this.txtDirPN);
+            this.groupBox1.Controls.Add(this.txtDirName);
+            this.groupBox1.Controls.Add(this.label13);
+            this.groupBox1.Controls.Add(this.label12);
+            this.groupBox1.Controls.Add(this.label11);
+            this.groupBox1.Controls.Add(this.label10);
+            this.groupBox1.Controls.Add(this.label9);
+            this.groupBox1.Controls.Add(this.label8);
+            this.groupBox1.Location = new System.Drawing.Point(10, 75);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(223, 200);
+            this.groupBox1.TabIndex = 1;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Director Information";
+            // 
+            // txtDirZip
+            // 
+            this.txtDirZip.Location = new System.Drawing.Point(104, 160);
+            this.txtDirZip.Name = "txtDirZip";
+            this.txtDirZip.Size = new System.Drawing.Size(100, 20);
+            this.txtDirZip.TabIndex = 11;
+            // 
+            // txtDirState
+            // 
+            this.txtDirState.Location = new System.Drawing.Point(104, 133);
+            this.txtDirState.Name = "txtDirState";
+            this.txtDirState.Size = new System.Drawing.Size(100, 20);
+            this.txtDirState.TabIndex = 10;
+            // 
+            // txtDirCity
+            // 
+            this.txtDirCity.Location = new System.Drawing.Point(104, 106);
+            this.txtDirCity.Name = "txtDirCity";
+            this.txtDirCity.Size = new System.Drawing.Size(100, 20);
+            this.txtDirCity.TabIndex = 9;
+            // 
+            // txtDirAdd
+            // 
+            this.txtDirAdd.Location = new System.Drawing.Point(104, 79);
+            this.txtDirAdd.Name = "txtDirAdd";
+            this.txtDirAdd.Size = new System.Drawing.Size(100, 20);
+            this.txtDirAdd.TabIndex = 8;
+            // 
+            // txtDirPN
+            // 
+            this.txtDirPN.Location = new System.Drawing.Point(104, 52);
+            this.txtDirPN.Name = "txtDirPN";
+            this.txtDirPN.Size = new System.Drawing.Size(100, 20);
+            this.txtDirPN.TabIndex = 7;
+            // 
+            // txtDirName
+            // 
+            this.txtDirName.Location = new System.Drawing.Point(104, 25);
+            this.txtDirName.Name = "txtDirName";
+            this.txtDirName.Size = new System.Drawing.Size(100, 20);
+            this.txtDirName.TabIndex = 6;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(6, 163);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(55, 14);
+            this.label13.TabIndex = 5;
+            this.label13.Text = "Zip Code";
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(6, 136);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(37, 14);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "State";
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(6, 109);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(32, 14);
+            this.label11.TabIndex = 3;
+            this.label11.Text = "City";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(6, 82);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(52, 14);
+            this.label10.TabIndex = 2;
+            this.label10.Text = "Address";
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(6, 55);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(93, 14);
+            this.label9.TabIndex = 1;
+            this.label9.Text = "Phone Number";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(6, 28);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(91, 14);
+            this.label8.TabIndex = 0;
+            this.label8.Text = "Director Name";
+            // 
+            // lblTournamentName
+            // 
+            this.lblTournamentName.AutoSize = true;
+            this.lblTournamentName.Font = new System.Drawing.Font("Georgia", 20.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTournamentName.Location = new System.Drawing.Point(4, 14);
+            this.lblTournamentName.Name = "lblTournamentName";
+            this.lblTournamentName.Size = new System.Drawing.Size(296, 31);
+            this.lblTournamentName.TabIndex = 0;
+            this.lblTournamentName.Text = "TournamentNameHere";
             // 
             // Events
             // 
@@ -208,6 +436,7 @@
             this.removeDivisionBtn.Text = "-";
             this.removeDivisionBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.removeDivisionBtn.UseVisualStyleBackColor = true;
+            this.removeDivisionBtn.Click += new System.EventHandler(this.removeDivisionBtn_Click);
             // 
             // addDivisionBtn
             // 
@@ -273,6 +502,7 @@
             this.removeEventBtn.Text = "-";
             this.removeEventBtn.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.removeEventBtn.UseVisualStyleBackColor = true;
+            this.removeEventBtn.Click += new System.EventHandler(this.removeEventBtn_Click);
             // 
             // addEventBtn
             // 
@@ -768,6 +998,12 @@
             this.Text = "JAAK";
             this.Load += new System.EventHandler(this.JAAK_Load);
             this.tabControl1.ResumeLayout(false);
+            this.Tournament.ResumeLayout(false);
+            this.Tournament.PerformLayout();
+            this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.Events.ResumeLayout(false);
             this.splitContainer2.Panel1.ResumeLayout(false);
             this.splitContainer2.Panel2.ResumeLayout(false);
@@ -851,6 +1087,27 @@
         private System.Windows.Forms.ToolStripMenuItem MIdeletebowler;
         private System.Windows.Forms.ToolStripMenuItem MIeditbowler;
         private System.Windows.Forms.TabPage Registration;
+        private System.Windows.Forms.Label lblTournamentName;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.TextBox txtDirZip;
+        private System.Windows.Forms.TextBox txtDirState;
+        private System.Windows.Forms.TextBox txtDirCity;
+        private System.Windows.Forms.TextBox txtDirAdd;
+        private System.Windows.Forms.TextBox txtDirPN;
+        private System.Windows.Forms.TextBox txtDirName;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.TextBox txtPlaces;
+        private System.Windows.Forms.TextBox txtPercent;
+        private System.Windows.Forms.RadioButton radPlaces;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton radPercent;
+        private System.Windows.Forms.CheckBox chkDiff;
     }
 }
 

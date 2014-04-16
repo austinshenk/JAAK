@@ -1,0 +1,29 @@
+Jon - 4/8/2014
+
++in Database.cs, added a method to perform a custom query, returns a datatable with results
++in Database.cs, added a method to fill a combobox with results from a query
++in Database.cs, edited the delete methods to prevent errors with syntax
++Added a main menu to select a tournament
++Added global Variables to keep track of selected tournament
++added open and create new and import buttons to main menu
++added functionality to open and new buttons on main menu
+O Hid import button until such time we are ready to implement
++Added tournament tab to edit tournament info
++added functionality to new, open, and close menu buttons under tournament menu item
++added functionality to new, delete, and edit buttons under bowling center menu item
++updated add bowler form for new inputs, still needs validation
+O Hid administrative button until we are ready to implement
++populated centernamecmb in create squad form with existing centers
++Updated createteam form, but still needs more work once database is complete
++added registration tab to create new bowlers and teams
+
+Jon - 4/15/2014
+
++Completed add Bowler form
++Completed edit Bowler form
++Updated Edit Center
++Implemented Delete Event in database.cs
++Completed CreateEvent and CreateDivision
++Completed DeleteEvent and DeleteDivision
++Completed DeleteSquad
++Completed Registration except for assigning a division

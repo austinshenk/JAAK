@@ -1,0 +1,10 @@
+Jon - 4/8/2014
+
+On registration tab is where we will create teams. Bowlers and teams will be created at the same time.
+We will only allow users to add teams that have aready been registered when they are in the squads table.
+
+Jon - 4/15/2014
+
+I've noticed that for some reason, the bowler table is getting cleared out randomly.
+I think it's only happening at the launch of the program.
+It does not happen every time. 

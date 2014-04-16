@@ -25,7 +25,7 @@ namespace JAAK
             int eid = DB.GetNewID("Event","EventID");
             if (cmbDF.SelectedIndex == -1) { DB.addEvent(eid.ToString(), TID, txtName.Text, cmbType.Text, cmbBoD.Text, null, txtLinage.Text, txtExpenses.Text, txtPrize.Text, lblTotal.Text); }
             else { DB.addEvent(eid.ToString(), TID, txtName.Text, cmbType.Text, cmbBoD.Text, cmbDF.SelectedValue.ToString(), txtLinage.Text, txtExpenses.Text, txtPrize.Text, lblTotal.Text); }
-            DB.addDivision(DB.GetNewID("Division", "DivisionID").ToString(), TID, eid.ToString(), cmbType.Text, null, null, null, null, null, null, null, null, null, null);
+            DB.addDivision(DB.GetNewID("Division", "DivisionID").ToString(), TID, eid.ToString(), cmbType.Text, "False" , "False", "False", null, null, null, null, null, "80", "210");
 
             this.Close();
         }

@@ -39,7 +39,6 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.lblTotal = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.btnCreate = new System.Windows.Forms.Button();
             this.btnCancel = new System.Windows.Forms.Button();
@@ -47,6 +46,7 @@
             this.txtExpenses = new System.Windows.Forms.TextBox();
             this.txtPrize = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.lblTotal = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -175,14 +175,6 @@
             this.label7.Text = "Prize Fund";
             this.label7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // lblTotal
-            // 
-            this.lblTotal.AutoSize = true;
-            this.lblTotal.Location = new System.Drawing.Point(113, 204);
-            this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(0, 13);
-            this.lblTotal.TabIndex = 16;
-            // 
             // label9
             // 
             this.label9.AutoSize = true;
@@ -254,6 +246,7 @@
             this.tableLayoutPanel1.ColumnCount = 2;
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 30F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 70F));
+            this.tableLayoutPanel1.Controls.Add(this.lblTotal, 1, 7);
             this.tableLayoutPanel1.Controls.Add(this.label1, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.txtPrize, 1, 6);
             this.tableLayoutPanel1.Controls.Add(this.txtName, 1, 0);
@@ -283,6 +276,16 @@
             this.tableLayoutPanel1.Size = new System.Drawing.Size(339, 218);
             this.tableLayoutPanel1.TabIndex = 23;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lblTotal.Location = new System.Drawing.Point(104, 189);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(232, 29);
+            this.lblTotal.TabIndex = 23;
+            this.lblTotal.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            // 
             // CreateEvent
             // 
             this.AcceptButton = this.btnCreate;
@@ -293,7 +296,6 @@
             this.Controls.Add(this.tableLayoutPanel1);
             this.Controls.Add(this.btnCancel);
             this.Controls.Add(this.btnCreate);
-            this.Controls.Add(this.lblTotal);
             this.MaximizeBox = false;
             this.Name = "CreateEvent";
             this.ShowIcon = false;
@@ -303,7 +305,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tableLayoutPanel1.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -320,7 +321,6 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label lblTotal;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Button btnCreate;
         private System.Windows.Forms.Button btnCancel;
@@ -328,5 +328,6 @@
         private System.Windows.Forms.TextBox txtExpenses;
         private System.Windows.Forms.TextBox txtPrize;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.Label lblTotal;
     }
 }

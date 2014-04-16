@@ -1,0 +1,11 @@
+Input validation in AddBowler--- DONE
+complete addbowler functionality once database is updated--- DONE
+add confirmation messages to all actions
+complete editbowler functionality once database is updated --- DONE
+Add functionality to addEvents, adddivisions, addsquads, addteams, etc. once database is updated--- ALMOST DONE
+on createsquad form, populate type with existing events---DONE
+Set up tournament tab for editing tournament details--- HOLD OFF
+set up scoring tab using a data grid view
+generate reports
+Assign divisions to teams
+reassign affected teams when a division is deleted

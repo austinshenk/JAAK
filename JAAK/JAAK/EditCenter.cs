@@ -30,6 +30,9 @@ namespace JAAK
             DataRow row = result.Rows[0];
             txtManager.Text = (string)row["GeneralManager"];
             txtAddress.Text = (string)row["Address"];
+            txtCity.Text = (string)row["City"];
+            txtState.Text = (string)row["State"];
+            txtZip.Text = (string)row["ZipCode"];
             txtPhone.Text = (string)row["PhoneNumber"];
         }
 
@@ -40,12 +43,12 @@ namespace JAAK
 
         private void btnUpdate_Click(object sender, EventArgs e)
         {
-            if (cmbCenters.Text == "" || txtManager.Text == "" || txtAddress.Text == "" || txtCity.Text == "" || txtState.Text == "" || txtZip.Text == "" || txtPhone.Text == "")
+            if (cmbCenters.Text == "" || txtManager.Text == "" || txtAddress.Text == "" || txtCity.Text == "" || txtState.Text == "" || txtZip.Text == "" || txtPhone.Text == "" || txtLanes.Text == "")
             {
                 MessageBox.Show("All fields are required");
                 return;
             }
-            DB.updateBowlingCenter(cmbCenters.Text, txtManager.Text, txtAddress.Text, txtCity.Text, txtState.Text, txtZip.Text, txtPhone.Text);
+            DB.updateBowlingCenter(cmbCenters.Text, txtManager.Text, txtAddress.Text, txtCity.Text, txtState.Text, txtZip.Text, txtPhone.Text, txtLanes.Text);
             this.Close();
         }
     }
